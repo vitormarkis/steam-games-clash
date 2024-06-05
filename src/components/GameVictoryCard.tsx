@@ -36,7 +36,7 @@ export const GameVictoryCard = React.forwardRef<
               alt=""
             />
             <span className="flex py-1 px-3 rounded border border-gray-200">
-              {steamGame?.genres[0].description}
+              {steamGame?.genres?.[0].description ?? "Unknown"}
             </span>
           </div>
           <div className="flex gap-5 flex-col p-2 border rounded-md border-black">
